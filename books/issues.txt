@@ -1,0 +1,16 @@
+
+
+current issues in society:
+
+Do you think recommendation engines is the biggest threat to society in ML?
+https://www.reddit.com/r/MachineLearning/comments/a02p59/discussion_do_you_think_recommendation_engines_is/
+
+Given Youtube’s current rec algorithm (the more seconds the user stays on the video, the higher the rank, the more likely the video is promoted to an identified user with similar tastes), the problem you’ve identified here is one we’ve had before the ML frenzy - media sensationalism.
+
+In effect, cable works on the same system. The longer they can keep viewers on the channel, the more valuable their ad real estate. Keeping users engaged is then more important over honest representation of truth. Outrage and fear are the most effective human emotions to lengthen engagement, hence... everything in the US right now, really.
+
+Other rec algorithms are a bit more removed from this, imo, as they don’t optimize for “engagement” in the same method as cable news.
+
+
+the consequence? 
+and the solution?

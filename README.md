@@ -28,3 +28,9 @@ http://colah.github.io/
 https://zhuanlan.zhihu.com/p/30707897
 
 https://medium.com/applied-data-science/alphago-zero-explained-in-one-diagram-365f5abf67e0
+
+
+# Latest articles about machine learning:
+https://distill.pub/
+
+https://cs.stanford.edu/people/karpathy/convnetjs/

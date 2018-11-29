@@ -1,0 +1,180 @@
+
+TensorFlow concept:
+	TFGraph
+	TFOperation
+		Placeholder
+		Const
+		Add
+		Mul
+		MatMul
+		Pow
+		Div
+		Sqrt
+		AssignVariableOp
+		ReadVariableOp
+		VarHandleOp
+		Assign
+		OnesLike
+		Shape
+		Size
+		DynamicStitch
+		
+	TFInput
+	TFOutput
+		TFGraph.Placeholder(TFDataType.Float);
+		TFGraph.Const(2)
+		TFGraph.Add(a, b)
+		TFGraph.Mul(a, b)
+	TFSession
+	TFSession.Runner
+	TFTensor
+	Variable
+	TFStatus
+	
+	TFShape
+	TFDataType
+	
+	sess.GetRunner().AddInput()
+					.AddTarget()
+					.Fetch(TFOutput)  // make the run method return the output of the tensor referenced by output
+					.Run()
+	
+node {
+  name: "Placeholder0"
+  op: "Placeholder"
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "shape"
+    value {
+      shape {
+        unknown_rank: true
+      }
+    }
+  }
+}
+node {
+  name: "Placeholder1"
+  op: "Placeholder"
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "shape"
+    value {
+      shape {
+        unknown_rank: true
+      }
+    }
+  }
+}
+node {
+  name: "Placeholder2"
+  op: "Placeholder"
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "shape"
+    value {
+      shape {
+        unknown_rank: true
+      }
+    }
+  }
+}
+node {
+  name: "Add0"
+  op: "Add"
+  input: "Placeholder0"
+  input: "Placeholder1"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+}
+node {
+  name: "Mul0"
+  op: "Mul"
+  input: "Add0"
+  input: "Placeholder2"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+}
+node {
+  name: "Const0"
+  op: "Const"
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 2
+      }
+    }
+  }
+}
+node {
+  name: "Pow0"
+  op: "Pow"
+  input: "Mul0"
+  input: "Const0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+}
+node {
+  name: "Div0"
+  op: "Div"
+  input: "Pow0"
+  input: "Placeholder0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+}
+node {
+  name: "Sqrt0"
+  op: "Sqrt"
+  input: "Div0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+}
+library {
+}
+versions {
+  producer: 27
+}
