@@ -1,0 +1,33 @@
+
+Async/ Await
+	1. if want synchronous call:
+		never use AsyncMethod().Wait();
+				  AsyncMethod().Result();
+		both can be replaced by:
+				  AsyncMethod().GetAwaiter().GetResult();
+	
+	2. for Fire and Forget Tasks:
+		Use 'ICommand'
+		Use async void (only from the main thread)
+	
+	
+	var results = await AsyncMethod();
+	should be replaced by:
+	var results = await AsyncMethod().ConfigureAwait(false);
+		// this will make the following code run in the same thread after this Async method finished
+		// no need for the main thread to pick up the following code to execute
+	also
+	var another = await Task.WhenAll(taskList).ConfigureAwait(false);
+	
+	4. Avoid 'return await'
+		can remove the async keyword in the call method statement
+		except in 'try/catch' blocks
+		except in 'using(...)' blocks
+	
+	
+	5. Multi-threading Async and Await
+		By default async and await are single threaded.
+		In order to make the async/await to run in multi-thread, we need to make use of 
+			Task.Run
+			or Task.Factory.StartNew
+		

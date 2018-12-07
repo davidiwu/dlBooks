@@ -27,7 +27,11 @@ http://colah.github.io/
 # AlphaGo Zero:
 https://zhuanlan.zhihu.com/p/30707897
 
+https://zhuanlan.zhihu.com/p/25345778
+
 https://medium.com/applied-data-science/alphago-zero-explained-in-one-diagram-365f5abf67e0
+
+https://tromp.github.io/go/legal.html
 
 
 # Latest articles about machine learning:
