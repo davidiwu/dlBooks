@@ -11,6 +11,7 @@ https://github.com/migueldeicaza/TensorFlowSharp
 
 https://github.com/tengge1/learn-tensorflow-sharp
 
+https://github.com/tensorflow/docs/tree/master/site/en/tutorials/keras
 
 # MCTS: MonterCarlo Tree Search 
 https://jeffbradberry.com/posts/2015/09/intro-to-monte-carlo-tree-search/
@@ -33,6 +34,7 @@ https://medium.com/applied-data-science/alphago-zero-explained-in-one-diagram-36
 
 https://tromp.github.io/go/legal.html
 
+http://www.depthfirstlearning.com/2018/AlphaGoZero
 
 # Latest articles about machine learning:
 https://distill.pub/
