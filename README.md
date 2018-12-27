@@ -4,7 +4,6 @@ Deep learning books and resources
 # git repositories 
 https://github.com/tensorflow/models/
 
-
 https://github.com/Qinbf
 
 https://github.com/migueldeicaza/TensorFlowSharp
@@ -40,3 +39,18 @@ http://www.depthfirstlearning.com/2018/AlphaGoZero
 https://distill.pub/
 
 https://cs.stanford.edu/people/karpathy/convnetjs/
+
+
+# RNN and Translation
+https://zhuanlan.zhihu.com/p/24590838
+
+https://github.com/tensorflow/nmt
+
+http://www.thushv.com/natural_language_processing/neural-machine-translator-with-50-lines-of-code-using-tensorflow-seq2seq/
+
+https://colab.research.google.com/github/thushv89/exercises_thushv_dot_com/blob/master/nmt_tutorial.ipynb
+
+https://github.com/zhongkaifu/Seq2SeqSharp
+
+https://en.wikipedia.org/wiki/Comparison_of_deep_learning_software
+

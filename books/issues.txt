@@ -1,4 +1,16 @@
 
+Dense/fully connected layer: 
+	A linear operation on the layer’s input vector.
+
+Convolutional layer: 
+	A layer that consists of a set of “filters”. The filters take a subset of the input data at a time, but are applied across the full input (by sweeping over the input). The operations performed by this layer are still linear/matrix multiplications, but they go through an activation function at the output, which is usually a non-linear operation.
+	
+Pooling layer: 
+	We utilise the fact that consecutive layers of the network are activated by “higher” or more complex features that are exhibited by a larger area of the networks input data. A pooling layer effectively down samples the output of the prior layer, reducing the number of operations required for all the following layers, but still passing on the valid information from the previous layer.
+	
+Normalisation layer: 
+	Used at the input for feature scaling, and in batch normalisation at hidden layers.
+
 
 current issues in society:
 
